@@ -7,7 +7,7 @@ resource "google_storage_bucket" "my-bucket-tf" {
 }
 
 provider "google" {
-  
+
 }
 
 
