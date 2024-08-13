@@ -6,12 +6,13 @@ on:
 jobs:
   docs:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v3
 
 
-    - name: RInstall Terraform Doc
-      uses: terraform-docs/gh-actions@v1.2.0
+    - name: Install Terraform Doc
+      uses: terraform-docs/gh-actions@main
       with:
         working-dir: .
         output-file: README.md
